@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Informações
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ion-card>
+      <img src=".png"/>
+  		<ion-card-content>
+        <ion-card-title>
+          Informações Adicionais
+        </ion-card-title>
+        <p>
+          <u>Nome do Programa:</u> "Teste2" (Template tabs) <br/>
+          <u>Autor:</u> Davi Rodrigues <br/>
+          <u>Data de Criação:</u> 19/06/2017 <br/>
+          <u>Versão:</u> 0.3
+        </p>
+  		</ion-card-content>
+	</ion-card>
+
+  <br/>
+
+  <ion-item>
+    <ion-label>Selecione uma data</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" pickerFormat="DD/MM/YYYY" [(ngModel)]="myDate">
+    </ion-datetime>
+  </ion-item>
+
+  <br/>
+
+	<button ion-button icon-left small>
+    <ion-icon name="arrow-back"></ion-icon>
+ 	 	Voltar
+	</button>
+
+  <br/>
+  <br/>
+
+  <ion-item>
+    <ion-range [(ngModel)]="brightness">
+      <ion-icon range-left name="sunny"></ion-icon>
+      <ion-icon range-right name="sunny"></ion-icon>
+    </ion-range>
+  </ion-item>
+
+  <ion-list>
+  <ion-item>
+    <ion-label>Única Seleção</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="nes">NES</ion-option>
+      <ion-option value="n64">Nintendo64</ion-option>
+      <ion-option value="ps">PlayStation</ion-option>
+      <ion-option value="genesis">Sega Genesis</ion-option>
+      <ion-option value="saturn">Sega Saturn</ion-option>
+      <ion-option value="snes">SNES</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-label>Seleção Multipla</ion-label>
+    <ion-select [(ngModel)]="toppings" multiple="true" cancelText="Nah" okText="Okay!">
+      <ion-option value="bacon" selected="true">Bacon</ion-option>
+      <ion-option value="olives">Black Olives</ion-option>
+      <ion-option value="xcheese" selected="true">Extra Cheese</ion-option>
+      <ion-option value="peppers">Green Peppers</ion-option>
+      <ion-option value="mushrooms">Mushrooms</ion-option>
+      <ion-option value="onions">Onions</ion-option>
+      <ion-option value="pepperoni">Pepperoni</ion-option>
+      <ion-option value="pineapple">Pineapple</ion-option>
+      <ion-option value="sausage">Sausage</ion-option>
+      <ion-option value="Spinach">Spinach</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-item>
+  <ion-label> Ligar/Desligar</ion-label>
+  <ion-toggle color="secondary" checked="true"></ion-toggle>
+</ion-item>
+
+</ion-content>
