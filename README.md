@@ -27,3 +27,4 @@ Substitute ios for android if not on a Mac.
 Primeiro App criado para treina Ionic
 
 teste pra colocar mais arquivos no commit
+teste 2
